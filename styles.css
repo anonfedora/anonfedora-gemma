@@ -257,7 +257,28 @@ body {
   letter-spacing: 0.5px;
 }
 
-@media (max-width: 480px) {
-  .carousel { aspect-ratio: 3 / 4; }
-  .marquee-track span { font-size: 1.3rem; padding: 0 1.5rem; }
+@media (max-width: 480px), (max-height: 780px) {
+  .marquee { padding: 0.45rem 0; }
+  .marquee-track span { font-size: 0.95rem; padding: 0 1rem; }
+
+  .page { padding: 0.75rem 1rem 0.75rem; }
+
+  .hero { margin-bottom: 0.6rem; }
+  .eyebrow { font-size: 0.58rem; letter-spacing: 2px; }
+  .hero h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .names { font-size: 0.88rem; margin-top: 0.25rem; }
+  .sub { font-size: 0.78rem; margin-top: 0.15rem; }
+
+  .carousel {
+    aspect-ratio: auto;
+    max-height: 36vh;
+    max-height: 36dvh;
+    height: 36dvh;
+  }
+
+  .carousel-footer { margin-top: 0.5rem; gap: 0.8rem; }
+  .ctrl { width: 32px; height: 32px; font-size: 0.8rem; }
+  .dots { max-width: 160px; }
+  .dot { width: 5px; height: 5px; }
+  .counter { font-size: 0.68rem; margin-top: 0.35rem; }
 }
